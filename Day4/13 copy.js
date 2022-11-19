@@ -1,3 +1,3 @@
 import fs from 'fs/promises';
 
-при
+Это был пример
