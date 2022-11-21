@@ -1,10 +1,8 @@
 import fs from 'fs/promises';
 import { constants } from 'fs';
 
-try{
-    await fs.access('text.txt', constants.F_OK);
+fs.access('text.txt', constants.F_OK).then(() => {
     console.log('Файл существует');
-}
-catch{
+}).catch(() => {
     console.error('Такого файла нет!');
-}
+});
