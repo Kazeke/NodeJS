@@ -113,3 +113,7 @@ let readText = +fs.readFileSync('1.txt', 'utf8');
 let readText2 = readText + 1;
 
 fs.readFileSync(String(readText2));
+
+           
+
+м789((чсс9я
