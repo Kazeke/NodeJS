@@ -1,6 +1,5 @@
 import http from 'http';
 
-
 let i = 0;
 http.createServer((request, response)=>{
     response.setHeader('Content-Type', 'text/html');

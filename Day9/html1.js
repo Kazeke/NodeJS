@@ -2,9 +2,9 @@ import http from 'http';
 import fs from 'fs';
 
 let pages = {
-    '/cars' : 'Audi',
-    '/home' : 'tables',
-    '/kids' : 'toys'
+    '/page1' : 'file1.html',
+    '/page2' : 'file2.html',
+    '/page3' : 'file3.html'
 }
 
 http.createServer(async(request, response)=>{
