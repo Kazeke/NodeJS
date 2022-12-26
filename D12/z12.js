@@ -3,7 +3,7 @@ import express from "express";
 let app = express();
 
 app.get("/water/:num", function (req, res) {
-  if (req.params.num <=9 ) {
+  if (req.params.num <=9 && req.params.num >=1 ) {
     res.send(req.params.num);
   }
   else {
