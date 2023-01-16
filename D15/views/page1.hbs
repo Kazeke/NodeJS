@@ -1,0 +1,69 @@
+<div>
+	<h2> Начало контента </h2>
+	<ol>
+		{{#each user}}
+		<li>
+			{{.}}
+		</li>
+
+		{{/each}}
+	</ol>
+
+	<i>{{user}}</i>
+	<i>{{user.[0]}}</i>
+
+	<h1>
+		{{# if sravnenie}}
+			<p>eto pravda</p>
+		{{else}}
+			<p>eto ne pravda</p>
+		{{/if}}
+	</h1>
+
+	
+	<h1>
+		{{#unless sravnenie}}
+			<p>da eto ne pravda</p>
+
+		{{/unless}}
+	</h1>
+
+	<h1>
+		{{# if joker1}}
+			<p>eto pravda joker1</p>
+		{{else}}
+			<p>eto ne pravda joker1</p>
+		{{/if}}
+	</h1>
+
+	<h1>		
+		{{# if joker2}}
+			<p>eto pravda joker2</p>
+		{{else}}
+			<p>eto ne pravda joker2</p>
+		{{/if}}
+	</h1>
+
+	<h1>
+		{{# if joker3}}
+			<p>eto pravda joker3</p>
+		{{else}}
+			<p>eto ne pravda joker3</p>
+		{{/if}}
+	</h1>
+
+	<h1>
+		{{#unless joker3}}
+			<p>da eto ne pravda joker3</p>
+
+		{{/unless}}
+	</h1>
+
+	
+	<h1>
+		{{#unless sravnenie}}
+			<p>da eto ne pravda</p>
+
+		{{/unless}}
+	</h1>
+</div>
